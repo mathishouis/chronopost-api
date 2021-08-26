@@ -14,6 +14,6 @@ interface ChronopostAPIInterface
      * @return array
      */
 
-    public function getPickupPointsFromZipCode(string $zip),
+    public function getPickupPointsFromZipCode(string $zip);
 
 }
