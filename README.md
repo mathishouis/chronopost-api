@@ -6,6 +6,7 @@ A PHP package to make the Chronopost API easier to use.
 
 [Requirements](#requirements)  
 [Installation](#installation)
+[Usage](#usage)
 
 ## Requirements
 
