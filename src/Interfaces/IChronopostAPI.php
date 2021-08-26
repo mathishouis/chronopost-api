@@ -4,7 +4,7 @@
 namespace Kozennnn\ChronopostAPI\Interfaces;
 
 
-interface ChronopostAPIInterface
+interface IChronopostAPI
 {
 
     /**
@@ -15,5 +15,15 @@ interface ChronopostAPIInterface
      */
 
     public function getPickupPointsFromZipCode(string $zip);
+
+
+    /**
+     * Return the package informations.
+     *
+     * @param string $packageCode
+     * @return array
+     */
+
+    public function trackPackage(string $packageCode);
 
 }

@@ -25,9 +25,22 @@ The following code return all the available Chronopost Pickup points.
 ```php
 <?php
 
-use Kozennnn\ChronopostAPI\ChronopostAPI;
+use Kozennnn\ChronopostAPI\IChronopostAPI;
 
-$chronopost = new ChronopostAPI();
+$chronopost = new IChronopostAPI();
 print_r($chronopost->getPickupPointsFromZipCode('44000')); // will print array with all the pickup points
+
+```
+#
+
+The following code return the package tracking informations.
+
+```php
+<?php
+
+use Kozennnn\ChronopostAPI\IChronopostAPI;
+
+$chronopost = new IChronopostAPI();
+print_r($chronopost->trackPackage('000')); // will print array with all the pickup points package tracking informations.
 
 ```
