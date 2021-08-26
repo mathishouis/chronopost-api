@@ -4,4 +4,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Kozennnn\ChronopostAPI\ChronopostAPI;
 
-print_r(ChronopostAPI::test('44260'));
+$chronopost = new ChronopostAPI();
+
+print_r($chronopost->getPickupPointsFromZipCode('44260'));
