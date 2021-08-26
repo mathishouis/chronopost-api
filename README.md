@@ -16,3 +16,17 @@ A PHP package to make the Chronopost API easier to use.
 ```
 composer require kozennnn/chronopost-api
 ```
+
+## Usage
+
+The following code return all the available Chronopost Pickup points.
+
+```php
+<?php
+
+use Kozennnn\ChronopostAPI\ChronopostAPI;
+
+$chronopost = new ChronopostAPI();
+print_r($chronopost->getPickupPointsFromZipCode('44000')); // will print array with all the pickup points
+
+```
