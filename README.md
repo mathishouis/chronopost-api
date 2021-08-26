@@ -42,7 +42,7 @@ The following code return the package tracking informations.
 use Kozennnn\ChronopostAPI\ChronopostAPI;
 
 $chronopost = new ChronopostAPI();
-print_r($chronopost->trackPackage('FD633119313NZ')); // will print array with all the pickup points package tracking informations.
+print_r($chronopost->trackPackage('FD633119313NZ')); // will print array with the package tracking informations.
 
 ```
 
