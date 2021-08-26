@@ -87,6 +87,9 @@ class ChronopostAPI implements IChronopostAPI
 
             $ch = curl_init();
 
+            echo "https://api.laposte.fr/suivi/v2/idships/".$packageCode."?lang=fr_FR";
+            echo " ";
+
             curl_setopt($ch, CURLOPT_URL,"https://api.laposte.fr/suivi/v2/idships/".$packageCode."?lang=fr_FR");
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                 'X-Forwarded-For: 123.123.123.123',

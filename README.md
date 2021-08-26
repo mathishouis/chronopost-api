@@ -7,6 +7,7 @@ A PHP package to make the Chronopost API easier to use.
 * [Requirements](#requirements)  
 * [Installation](#installation)
 * [Usage](#usage)
+* [Testing](#testing)
 
 ## Requirements
 
@@ -41,6 +42,12 @@ The following code return the package tracking informations.
 use Kozennnn\ChronopostAPI\IChronopostAPI;
 
 $chronopost = new IChronopostAPI();
-print_r($chronopost->trackPackage('000')); // will print array with all the pickup points package tracking informations.
+print_r($chronopost->trackPackage('FD633119313NZ')); // will print array with all the pickup points package tracking informations.
 
+```
+
+## Testing
+
+```
+php tests/ChronopostAPITest.php
 ```
